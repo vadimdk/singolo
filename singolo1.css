@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1020px;
+  margin: 0, auto;
+  padding: 0;
+}
+
+header {
+  height: 89px;
+  background-color: #2d303a;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header-top {
+  width: 940px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 3px;
+  font-size: 25px;
+  line-height: 6px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+}
+
+span {
+  color: #e36861;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 31px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 6px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 700;
+  text-align: left;
+  align-items: stretch;
+}
+
+a:hover {
+  color: #f06c64; /* Цвет при наведении на ссылку */
+}
+
+nav {
+  padding-left: 12px;
+  display: flex;
+  width: 415px;
+}
+
+ul {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  width: 93px;
+  list-style: none;
+}
+
+.header-bottom {
+  width: 1020px;
+  height: 6px;
+  background-color: #323746;
+}
+
+main {
+  height: 600px;
+  width: 1020px;
+  background-color: #f06c64;
+}
+
+.left-arrow {
+  width: 20px;
+  height: 585px;
+  align-items: center;
+  display: flex;
+}
+
+.slider-block {
+  width: 940px;
+  height: 585px;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-block {
+  width: 20px;
+  height: 25;
+  padding-left: 2px;
+  padding-top: 3px;
+}
+
+.arrow-img {
+  cursor: pointer;
+  opacity: 33%;
+}
+
+.arrow-img:hover {
+  opacity: 90%; /* Цвет при наведении на стрелку */
+}
+
+.first-phone {
+  width: 250px;
+  height: 565px;
+  margin-bottom: 54px;
+  margin-left: 48px;
+
+  background-image: url(./assets/img/vertical-phone.png);
+
+  display: flex;
+  z-index: 2;
+}
+
+.screen-img {
+  margin-top: 134px;
+  margin-left: 16px;
+}
+
+.main-bottom {
+  height: 15px;
+  background-color: #f06c64;
+}
