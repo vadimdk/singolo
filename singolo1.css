@@ -138,3 +138,13 @@ main {
   height: 15px;
   background-color: #f06c64;
 }
+
+.second-phone {
+  width: 554px;
+  height: 371px;
+  margin-left: 4px;
+  margin-top: -75px;
+  align-items: center;
+  display: flex;
+  background-image: url(./assets/img/HorisontalPhone.png);
+}
