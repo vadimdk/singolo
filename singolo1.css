@@ -94,6 +94,16 @@ main {
   display: flex;
 }
 
+.right-arrow {
+  width: 20px;
+  height: 585px;
+  margin-left: 51px;
+  padding-left: 2px;
+  padding-top: 2px;
+  align-items: center;
+  display: flex;
+}
+
 .slider-block {
   width: 940px;
   height: 585px;
@@ -129,9 +139,14 @@ main {
   z-index: 2;
 }
 
-.screen-img {
+.screen-first {
   margin-top: 134px;
   margin-left: 16px;
+}
+
+.screen-second {
+  margin-top: 57px;
+  margin-left: 124px;
 }
 
 .main-bottom {
@@ -147,4 +162,21 @@ main {
   align-items: center;
   display: flex;
   background-image: url(./assets/img/HorisontalPhone.png);
+}
+
+footer {
+  height: 500px;
+  background-color: darkgoldenrod;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 71px;
+  padding-left: 4px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
 }
