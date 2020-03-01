@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1020px;
+  margin: 0, auto;
+  padding: 0;
+}
+
+header {
+  height: 870px;
+  background-color: #2d303a;
+  display: flex;
+  justify-content: center;
+}
+
+.header-bottom {
+  height: 6px;
+  background-color: #323746;
+}
+
+.containar {
+  width: 960px;
+  margin: 0, auto;
+  padding-left: 12px;
+}
+
+.text {
+  margin-top: 27px;
+  width: 940px;
+  height: 25px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+}
+
+nav {
+  width: 289px;
+  height: 35px;
+  margin-top: 8px;
+  padding-left: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-text {
+  padding-left: 6px;
+  padding-right: 6px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  border-radius: 5px;
+  background-color: #2d303a;
+  border: 1px solid #666d89;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 1px solid #c5c5c5; /* Цвет при наведении на кнопку */
+}
+
+h1 {
+  margin-top: 60px;
+  padding-top: 10px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
+.container-main {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+
+  grid-column-gap: 10px;
+  grid-row-gap: 22px;
+  /* background-color: darkturquoise; */
+  justify-content: center;
+}
+
+.container-main > div {
+  /* background: #5019a3; */
+  width: 220px;
+  height: 187px;
+  align-items: center;
+}
+
+footer {
+  height: 728px;
+  background-color: #f2f2f2;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-left: 41px;
+  margin-top: 66px;
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
+.footer-text {
+  width: 940px;
+  height: 57px;
+  margin-left: 39px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+}

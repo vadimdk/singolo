@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 223 190" width="223" height="190">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #464b5e } 
+	</style>
+	<g id="Portfolio">
+		<g id="Images">
+			<path id="Image" class="shp0" d="M1 1L221 1L221 188L1 188L1 1Z" />
+		</g>
+	</g>
+</svg>
