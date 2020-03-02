@@ -128,3 +128,21 @@ h2 {
   font-weight: 300;
   text-align: left;
 }
+
+.photos-containar {
+  padding-top: 43px;
+  padding-left: 38px;
+  margin-bottom: 19px;
+  padding-right: 38px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-content: center;
+}
+
+.photos-containar > div {
+  width: 300px;
+  height: 300px;
+  align-items: center;
+}
