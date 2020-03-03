@@ -21,6 +21,7 @@ header {
 
 .containar {
   width: 960px;
+  height: 1600px;
   margin: 0, auto;
   padding-left: 12px;
 }
@@ -145,4 +146,71 @@ h2 {
   width: 300px;
   height: 300px;
   align-items: center;
+}
+
+.bottom-container {
+  width: 940px;
+  height: 133px;
+  margin-left: 37px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-block {
+  width: 300px;
+  height: 143px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
+.random-text {
+  height: 40px;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+}
+
+.icons-row {
+  width: 160px;
+  height: 38px;
+  margin-top: 20px;
+  padding-left: 3px;
+  padding-top: 4px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.ellipse {
+  width: 32px;
+  height: 32px;
+  padding-bottom: 6px;
+  padding-top: 8px;
+  border-radius: 16px;
+  border: 1px solid #666d89;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-bottom {
+  width: 1020px;
+  height: 6px;
+  background-color: #ffffff;
 }
