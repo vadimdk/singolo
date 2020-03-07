@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1020px;
+  height: 648px;
+  background-color: #f06c64;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
