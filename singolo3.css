@@ -2,21 +2,51 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 1020px;
-  height: 648px;
-  background-color: #f06c64;
+  width: 1020px;
+  margin: 0;
+}
+
+.wrapper {
+  width: 940px;
+  margin: auto;
 }
 
 header {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  background-color: #f06c64;
 }
 
 h1 {
+  margin: 28px 8px;
   font-size: 30px;
   line-height: 18px;
   color: #f0d8d9;
   font-family: "Lato";
   font-weight: 900;
   text-align: left;
+}
+
+.header__text {
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 300;
+  text-align: left;
+}
+
+form {
+  width: 620px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 619px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: #d6564f;
 }
