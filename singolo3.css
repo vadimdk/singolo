@@ -18,7 +18,7 @@ header {
 }
 
 h1 {
-  margin: 28px 8px;
+  margin: 70px -2px 0px;
   font-size: 30px;
   line-height: 18px;
   color: #f0d8d9;
@@ -28,7 +28,7 @@ h1 {
 }
 
 .header__text {
-  margin-left: 10px;
+  margin-top: 27px;
   font-size: 18px;
   line-height: 30px;
   color: #f0d8d9;
@@ -37,16 +37,168 @@ h1 {
   text-align: left;
 }
 
+main {
+  background-color: #f06c64;
+}
 form {
   width: 620px;
-  margin-left: 10px;
+  padding-top: 22px;
   display: flex;
   flex-direction: column;
+  flex-grow: 3;
 }
 
 input {
   width: 619px;
   height: 38px;
   border-radius: 5px;
+  margin-bottom: 17px;
+  padding-left: 13px;
   background-color: #d6564f;
+  border: none;
+}
+
+.containar-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact__info {
+  width: 294px;
+  height: 250px;
+  flex-grow: 1;
+}
+
+#describe__info {
+  height: 203px;
+  padding-bottom: 169px;
+}
+
+::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+}
+
+::-moz-placeholder {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+} /* Firefox 19+ */
+
+:-moz-placeholder {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+} /* Firefox 18- */
+
+:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+}
+
+.button__submit {
+  width: 60px;
+  height: 33px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+h3 {
+  padding: 7px 0px 0px;
+  margin: 19px 0px 0px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+
+.contact__text {
+  margin: 7px 0px 22px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+}
+
+.contacts {
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+}
+
+.contacts__location::before {
+  content: url("./assets/img/location-icon.png");
+  margin-right: 13px;
+}
+
+.contacts__tel::before {
+  content: url("./assets/img/phone-icon.png");
+  margin-left: -2px;
+  margin-right: 11px;
+}
+
+.contacts__email::before {
+  content: url("./assets/img/mail-icon.png");
+  margin-right: 10px;
+  margin-left: -3px;
+}
+
+.bg__bottom {
+  width: 1020px;
+  height: 6px;
+  background-color: #ea676b;
+}
+
+.bg__footer {
+  width: 1020px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  background-color: #2d303a;
+}
+
+.wrapper_footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  background-image: url("./assets/img/Copyright.png");
+  width: 94px;
+  height: 15px;
+  margin: 0px 1px;
+  background-repeat: no-repeat;
+}
+
+.icons {
+  width: 152px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
 }
