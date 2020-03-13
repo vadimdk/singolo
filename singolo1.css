@@ -2,30 +2,30 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 1020px;
+  width: 1020px;
   margin: 0, auto;
   padding: 0;
 }
 
-header {
+.header1 {
   height: 89px;
   background-color: #2d303a;
 }
 
-.wrapper {
+.wrapper-singolo1 {
   width: 940px;
   margin: 0 auto;
   display: flex;
 }
 
-.header-top {
+.header-top1 {
   width: 940px;
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
 
-.logo {
+.logo1 {
   margin-top: 3px;
   font-size: 25px;
   line-height: 6px;
@@ -35,11 +35,11 @@ header {
   text-align: left;
 }
 
-span {
+.star_colored {
   color: #e36861;
 }
 
-a {
+.nav__item1 {
   text-decoration: none;
   margin-left: 31px;
   cursor: pointer;
@@ -52,17 +52,17 @@ a {
   align-items: stretch;
 }
 
-a:hover {
+.nav__item1:hover {
   color: #f06c64; /* Цвет при наведении на ссылку */
 }
 
-nav {
+.nav__menu1 {
   padding-left: 12px;
   display: flex;
   width: 415px;
 }
 
-ul {
+.nav__items {
   width: 400px;
   display: flex;
   justify-content: space-between;
@@ -70,31 +70,31 @@ ul {
   padding: 0;
 }
 
-li {
+.nav__li {
   width: 93px;
   list-style: none;
 }
 
-.header-bottom {
+.header-bottom1 {
   width: 1020px;
   height: 6px;
   background-color: #323746;
 }
 
-main {
+.main1 {
   height: 600px;
   width: 1020px;
   background-color: #f06c64;
 }
 
-.left-arrow {
+.left-arrow1 {
   width: 20px;
   height: 585px;
   align-items: center;
   display: flex;
 }
 
-.right-arrow {
+.right-arrow1 {
   width: 20px;
   height: 585px;
   margin-left: 51px;
@@ -104,26 +104,26 @@ main {
   display: flex;
 }
 
-.slider-block {
+.slider-block1 {
   width: 940px;
   height: 585px;
   display: flex;
   align-items: center;
 }
 
-.arrow-block {
+.arrow-block1 {
   width: 20px;
   height: 25;
   padding-left: 2px;
   padding-top: 3px;
 }
 
-.arrow-img {
+.arrow-img1 {
   cursor: pointer;
   opacity: 33%;
 }
 
-.arrow-img:hover {
+.arrow-img1:hover {
   opacity: 90%; /* Цвет при наведении на стрелку */
 }
 
@@ -149,7 +149,7 @@ main {
   margin-left: 124px;
 }
 
-.main-bottom {
+.main-bottom1 {
   height: 15px;
   background-color: #f06c64;
 }
@@ -164,19 +164,19 @@ main {
   background-image: url(./assets/img/HorisontalPhone.png);
 }
 
-footer {
+.footer1 {
   height: 495px;
   background-color: #f2f2f2;
 }
 
-.footer-wrapper {
+.footer-wrapper1 {
   width: 940px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-h1 {
+.services1 {
   margin: 0;
   padding-top: 71px;
   padding-left: 4px;
@@ -188,7 +188,7 @@ h1 {
   text-align: left;
 }
 
-.footer-top {
+.footer-top1 {
   width: 940px;
   height: 50px;
   margin-top: 28px;
@@ -201,7 +201,7 @@ h1 {
   text-align: left;
 }
 
-.first-section {
+.first-section1 {
   width: 940px;
   height: 90px;
   margin-top: 34px;
@@ -209,7 +209,7 @@ h1 {
   flex-direction: row;
 }
 
-.icon {
+.icon1 {
   width: 64px;
   height: 90px;
 }
@@ -236,7 +236,7 @@ h1 {
   height: 32px;
 }
 
-h3 {
+.top__text1 {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -246,7 +246,7 @@ h3 {
   text-align: left;
 }
 
-.text {
+.text1 {
   padding-top: 8px;
   letter-spacing: 0.235px;
   font-size: 12px;
@@ -257,20 +257,20 @@ h3 {
   text-align: left;
 }
 
-.section-text {
+.section-text1 {
   width: 220px;
   height: 90px;
   margin-left: 19px;
   margin-right: 17px;
 }
 
-.fainalsection-text {
+.fainalsection-text1 {
   width: 220px;
   height: 90px;
   margin-left: 19px;
 }
 
-.footer-bottom {
+.footer-bottom1 {
   width: 1020px;
   height: 6px;
   background-color: #ffffff;
