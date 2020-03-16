@@ -52,8 +52,12 @@ body {
   align-items: stretch;
 }
 
-.nav__item1:hover {
+.nav__item1:not(.active):hover {
   color: #f06c64; /* Цвет при наведении на ссылку */
+}
+
+.active {
+  color: #f06c64;
 }
 
 .nav__menu1 {

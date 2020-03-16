@@ -15,12 +15,12 @@
             <div class="header-top1">
                 <div class="logo1">SINGOLO<span class="star_colored">*</span></div>
                 <nav class="nav__menu1">
-                    <ul class="nav__items">
-                        <li class="nav__li"><a class="nav__item1" href="#">HOME</a></li>
-                        <li class="nav__li"><a class="nav__item1" href="#">SERVICES</a></li>
-                        <li class="nav__li"><a class="nav__item1" href="#">PORTFOLIO</a></li>
-                        <li class="nav__li"><a class="nav__item1" href="#">ABOUT</a></li>
-                        <li class="nav__li"><a class="nav__item1" href="#">CONTACT</a></li>
+                    <ul id="menu" class="nav__items">
+                        <li class="nav__li"><a class="nav__item1 active" href="#">HOME</a></li>
+                        <li class="nav__li"><a class="nav__item1" href="#services">SERVICES</a></li>
+                        <li class="nav__li"><a class="nav__item1" href="#portfolio">PORTFOLIO</a></li>
+                        <li class="nav__li"><a class="nav__item1" href="#about">ABOUT</a></li>
+                        <li class="nav__li"><a class="nav__item1" href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -63,7 +63,7 @@
     <footer class="footer1">
         <div class="footer-wrapper1">
             <section>
-                <h1 class="services1">Our Services</h1>
+                <h1 id="services" class="services1">Our Services</h1>
                 <div class="footer-top1">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti possimus doloremque minus
                     reiciendis suscipit.
@@ -166,7 +166,7 @@
 
     <header class="header2">
         <div class="containar2">
-            <h1 class="portfolio">Portfolio</h1>
+            <h1 id="portfolio" class="portfolio">Portfolio</h1>
             <div class="text2">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem
                 nec
                 elit</div>
@@ -228,7 +228,7 @@
     <footer class="footer2">
         <div class="container2">
             <div class="footer-top2">
-                <h2>About Us</h2>
+                <h2 id="about">About Us</h2>
                 <div class="footer-text2">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis
                     mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce
                     dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -363,7 +363,7 @@
                         Proin sit amet volutpat
                         libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
                     </p>
-                    <div class="contacts">
+                    <div id="contact" class="contacts">
                         <ul class="contacts-links">
                             <li class="contacts-links__item location">
                                 <a href="#">Elm St.14/05 Lost City</a>
@@ -404,6 +404,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
