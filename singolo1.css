@@ -91,35 +91,116 @@ body {
   background-color: #f06c64;
 }
 
-.left-arrow1 {
-  width: 20px;
-  height: 585px;
-  align-items: center;
+.carusel {
+  width: 940px;
   display: flex;
-}
-
-.right-arrow1 {
-  width: 20px;
-  height: 585px;
-  margin-left: 51px;
-  padding-left: 2px;
-  padding-top: 2px;
   align-items: center;
-  display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .slider-block1 {
-  width: 940px;
+  width: 95%;
+  margin: 0 auto;
   height: 585px;
-  display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.arrow-block1 {
-  width: 20px;
-  height: 25;
-  padding-left: 2px;
-  padding-top: 3px;
+.item-wrapper {
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 2%;
+  left: 0%;
+  animation: 0.7s ease-in-out;
+}
+
+.visible,
+.next {
+  display: flex;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 80%;
+}
+
+.control {
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  width: 0%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.control.left {
+  left: 0;
+  right: auto;
+}
+
+.control.right {
+  right: 0%;
+  left: auto;
+}
+
+.arrow.right {
+  right: 40%;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  top: 39%;
+  transform: translateY(-50%);
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  top: 39%;
+  transform: translateY(-50%);
 }
 
 .arrow-img1 {
@@ -136,21 +217,25 @@ body {
   height: 565px;
   margin-bottom: 54px;
   margin-left: 48px;
-
   background-image: url(./assets/img/vertical-phone.png);
-
   display: flex;
   z-index: 2;
 }
 
-.screen-first {
-  margin-top: 134px;
-  margin-left: 16px;
+.invisible {
+  display: none;
 }
 
-.screen-second {
-  margin-top: 57px;
-  margin-left: 124px;
+.screen_vertical {
+  position: absolute;
+  top: 135px;
+  left: 64px;
+}
+
+.screen_horizontal {
+  position: absolute;
+  top: 178px;
+  left: 421px;
 }
 
 .main-bottom1 {
@@ -162,7 +247,8 @@ body {
   width: 554px;
   height: 371px;
   margin-left: 4px;
-  margin-top: -75px;
+  margin-right: 50px;
+  margin-top: -130px;
   align-items: center;
   display: flex;
   background-image: url(./assets/img/HorisontalPhone.png);

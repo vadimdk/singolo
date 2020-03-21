@@ -71,6 +71,12 @@ nav {
   cursor: pointer;
 }
 
+.tag_selected {
+  background-color: rgb(115, 89, 134);
+  border: 1px solid #c5c5c5;
+  color: #c5c5c5;
+}
+
 .button2:hover {
   border: 1px solid #c5c5c5; /* Цвет при наведении на кнопку */
 }
@@ -95,7 +101,7 @@ nav {
   justify-content: center;
 }
 
-.container-main2 > div {
+.picture {
   width: 220px;
   height: 187px;
   align-items: center;
