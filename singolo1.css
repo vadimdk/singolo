@@ -230,12 +230,14 @@ body {
   position: absolute;
   top: 135px;
   left: 64px;
+  cursor: pointer;
 }
 
 .screen_horizontal {
   position: absolute;
   top: 178px;
   left: 421px;
+  cursor: pointer;
 }
 
 .main-bottom1 {
