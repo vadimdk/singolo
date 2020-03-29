@@ -56,13 +56,20 @@ document.querySelector(".control.right").addEventListener("click", function() {
   }
 });
 
-const TOOGLESCREEN = document.querySelectorAll(".first-phone");
+const toggleScreenHandler = document.querySelector(".item-wrapper");
 
-document
-  .querySelector(".screen_vertical")
-  .addEventListener("click", function(event) {
-    event.target.classList.add("invisible");
-  });
+toggleScreenHandler.addEventListener("click", (e) => {
+  if (e.target.classList.contains("black")) {
+    e.target
+      .querySelectorAll("img")
+      .forEach((el) => el.classList.remove("invisible"));
+    e.target.classList.remove("black");
+  } else {
+    e.target.classList.add("invisible");
+
+    e.target.parentElement.classList.add("black");
+  }
+});
 
 /*Portfolio tags*/
 
