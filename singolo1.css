@@ -2,30 +2,30 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 1020px;
+  width: 1020px;
   margin: 0, auto;
   padding: 0;
 }
 
-header {
+.header1 {
   height: 89px;
   background-color: #2d303a;
 }
 
-.wrapper {
+.wrapper-singolo1 {
   width: 940px;
   margin: 0 auto;
   display: flex;
 }
 
-.header-top {
+.header-top1 {
   width: 940px;
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
 
-.logo {
+.logo1 {
   margin-top: 3px;
   font-size: 25px;
   line-height: 6px;
@@ -35,11 +35,11 @@ header {
   text-align: left;
 }
 
-span {
+.star_colored {
   color: #e36861;
 }
 
-a {
+.nav__item1 {
   text-decoration: none;
   margin-left: 31px;
   cursor: pointer;
@@ -52,17 +52,21 @@ a {
   align-items: stretch;
 }
 
-a:hover {
+.nav__item1:not(.active):hover {
   color: #f06c64; /* Цвет при наведении на ссылку */
 }
 
-nav {
+.active {
+  color: #f06c64;
+}
+
+.nav__menu1 {
   padding-left: 12px;
   display: flex;
   width: 415px;
 }
 
-ul {
+.nav__items {
   width: 400px;
   display: flex;
   justify-content: space-between;
@@ -70,60 +74,141 @@ ul {
   padding: 0;
 }
 
-li {
+.nav__li {
   width: 93px;
   list-style: none;
 }
 
-.header-bottom {
+.header-bottom1 {
   width: 1020px;
   height: 6px;
   background-color: #323746;
 }
 
-main {
+.main1 {
   height: 600px;
   width: 1020px;
   background-color: #f06c64;
 }
 
-.left-arrow {
-  width: 20px;
-  height: 585px;
-  align-items: center;
-  display: flex;
-}
-
-.right-arrow {
-  width: 20px;
-  height: 585px;
-  margin-left: 51px;
-  padding-left: 2px;
-  padding-top: 2px;
-  align-items: center;
-  display: flex;
-}
-
-.slider-block {
+.carusel {
   width: 940px;
-  height: 585px;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.arrow-block {
-  width: 20px;
-  height: 25;
-  padding-left: 2px;
-  padding-top: 3px;
+.slider-block1 {
+  width: 95%;
+  margin: 0 auto;
+  height: 585px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.arrow-img {
+.item-wrapper {
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 2%;
+  left: 0%;
+  animation: 0.7s ease-in-out;
+}
+
+.visible,
+.next {
+  display: flex;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 80%;
+}
+
+.control {
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  width: 0%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.control.left {
+  left: 0;
+  right: auto;
+}
+
+.control.right {
+  right: 0%;
+  left: auto;
+}
+
+.arrow.right {
+  right: 40%;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  top: 39%;
+  transform: translateY(-50%);
+}
+
+.to-left {
+  animation-name: left;
+}
+
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.from-right {
+  animation-name: right;
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  top: 39%;
+  transform: translateY(-50%);
+}
+
+.arrow-img1 {
   cursor: pointer;
   opacity: 33%;
 }
 
-.arrow-img:hover {
+.arrow-img1:hover {
   opacity: 90%; /* Цвет при наведении на стрелку */
 }
 
@@ -132,24 +217,30 @@ main {
   height: 565px;
   margin-bottom: 54px;
   margin-left: 48px;
-
   background-image: url(./assets/img/vertical-phone.png);
-
   display: flex;
   z-index: 2;
 }
 
-.screen-first {
-  margin-top: 134px;
-  margin-left: 16px;
+.invisible {
+  display: none;
 }
 
-.screen-second {
-  margin-top: 57px;
-  margin-left: 124px;
+.screen_vertical {
+  position: absolute;
+  top: 135px;
+  left: 64px;
+  cursor: pointer;
 }
 
-.main-bottom {
+.screen_horizontal {
+  position: absolute;
+  top: 178px;
+  left: 421px;
+  cursor: pointer;
+}
+
+.main-bottom1 {
   height: 15px;
   background-color: #f06c64;
 }
@@ -158,25 +249,26 @@ main {
   width: 554px;
   height: 371px;
   margin-left: 4px;
-  margin-top: -75px;
+  margin-right: 50px;
+  margin-top: -130px;
   align-items: center;
   display: flex;
   background-image: url(./assets/img/HorisontalPhone.png);
 }
 
-footer {
+.footer1 {
   height: 495px;
   background-color: #f2f2f2;
 }
 
-.footer-wrapper {
+.footer-wrapper1 {
   width: 940px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-h1 {
+.services1 {
   margin: 0;
   padding-top: 71px;
   padding-left: 4px;
@@ -188,7 +280,7 @@ h1 {
   text-align: left;
 }
 
-.footer-top {
+.footer-top1 {
   width: 940px;
   height: 50px;
   margin-top: 28px;
@@ -201,7 +293,7 @@ h1 {
   text-align: left;
 }
 
-.first-section {
+.first-section1 {
   width: 940px;
   height: 90px;
   margin-top: 34px;
@@ -209,7 +301,7 @@ h1 {
   flex-direction: row;
 }
 
-.icon {
+.icon1 {
   width: 64px;
   height: 90px;
 }
@@ -236,7 +328,7 @@ h1 {
   height: 32px;
 }
 
-h3 {
+.top__text1 {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -246,7 +338,7 @@ h3 {
   text-align: left;
 }
 
-.text {
+.text1 {
   padding-top: 8px;
   letter-spacing: 0.235px;
   font-size: 12px;
@@ -257,20 +349,20 @@ h3 {
   text-align: left;
 }
 
-.section-text {
+.section-text1 {
   width: 220px;
   height: 90px;
   margin-left: 19px;
   margin-right: 17px;
 }
 
-.fainalsection-text {
+.fainalsection-text1 {
   width: 220px;
   height: 90px;
   margin-left: 19px;
 }
 
-.footer-bottom {
+.footer-bottom1 {
   width: 1020px;
   height: 6px;
   background-color: #ffffff;
